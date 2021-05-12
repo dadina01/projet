@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Agenda</title>
+
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="./evo-calendar/css/evo-calendar.min.css">
+    <link rel="stylesheet" type="text/css" href="./evo-calendar/css/evo-calendar.green.min.css">
+    <link rel="stylesheet" type="text/css" href="./evo-calendar/css/evo-calendar.orange-coral.min.css">
+    <link rel="stylesheet" type="text/css" href="./evo-calendar/css/evo-calendar.midnight-blue.min.css">
+    <link rel="stylesheet" type="text/css" href="./evo-calendar/css/evo-calendar.royal-navy.min.css">
+
+
+    <link rel="stylesheet" type="text/css" href="./evo-calendar/css/evo-calendar.midnight-blue.min.css">
+  <link rel="stylesheet" type="text/css" href="./evo-calendar/css/evo-calendar.royal-navy.min.css">
+
+    <link rel="stylesheet" type="text/css" href="./demo/demo.css">
+    <!--Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap" rel="stylesheet">
+
+   <!-- <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .hero{
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg,#6ac1c5,#bda5ff);
+            position: relative;
+        }
+
+        #calendar{
+            width: 80%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+
+
+    </style>-->
+
+
+</head>
+<body data-spy="scroll" data-offset="0" data-target="#gn-menu">
+    
+ <div class="header-container clearfix">
+            <h1 class="title" data-go="#top" title="Oh, hi! :)"><span>Mon</span>Agend</h1>
+
+           </div>
+
+
+           <section id="demos">
+                <div class="section-content">
+                    <p class="section-title --shrt">Gestion d'Agenda</p>
+                    <div class="action-buttons">
+                        <p >Bienvenue sur votre agenda</p>
+                       <!--<button class="btn-action active" data-set-theme="Default">DEFAULT</button>
+                        <button class="btn-action" data-set-theme="Midnight Blue">MIDNIGHT BLUE</button>
+                        <button class="btn-action" data-set-theme="Royal Navy">ROYAL NAVY</button>
+                        <button class="btn-action" data-set-theme="Orange Coral">ORANGE CORAL</button>-->
+                 </section>
+
+
+<div class="hero">
+<div class="p-3 mb-2 bg-success text-white">	
+<div id="calendar"></div>
+
+</div>
+</div>
+
+
+ <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+ <script src="./evo-calendar/js/evo-calendar.min.js"></script>
+ <script src="./demo/demo.js"></script>
+
+<script type="text/javascript">
+	
+	$(document).ready(function(){
+		$('#calendar').evoCalendar({
+
+		})
+	})
+</script>
+
+<script type="text/javascript">
+    
+// addCalendarEvent
+$('#calendar').evoCalendar('addCalendarEvent', {
+     id: 'kNybja6',
+     name: 'Mom\'s Birthday',
+     description: 'Lorem ipsum dolor sit..',
+     date: 'April 27, 2021',
+     type: 'birthday'
+});
+// add multiple events
+$('#calendar').evoCalendar('addCalendarEvent', [
+     {
+          id: 'kNybja6',
+          name: 'Mom\'s Birthday',
+          date: 'May 27, 1965',
+          type: 'birthday',
+          everyYear: true // optional
+     },
+     {
+          id: 'asDf87L',
+          name: 'Graduation Day!',
+          date: 'March 21, 2020',
+          type: 'event'
+     }
+]);
+ 
+
+
+</script>
+
+
+</body>
+</html>
